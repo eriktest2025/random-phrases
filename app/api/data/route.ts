@@ -3,7 +3,7 @@
     const subjects = ["The dog", "The turtle", "My friend", "Sebastian "]
     const predicates = ["runs fast", "is very wise", "loves coding", "sings poorly"]
 
-    export async function GET(res: Response) {
+    export async function GET() {
         const subject = randomValue(subjects);
         const predicate = randomValue(predicates)
 
