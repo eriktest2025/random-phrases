@@ -1,18 +1,45 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Random Phrases Dockerized Project
 
-First, run the development server:
+This is a project that give you a random phrase each time that you make a click on the button, fully containerized using Docker.
+
+## Prerequisites
+
+- Docker version 27.3.1 or higher.
+- Docker Compose version v2.29.7 or higher.
+
+
+## How to Install and Run
+
+### Clone this repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/eriktest2025/random-phrases.git
+cd random-phrases
 ```
+
+### Build the Docker image:
+
+```bash
+docker build -t random-phrases .
+```
+
+### Start the container in development mode:
+
+```bash
+docker build -t random-phrases  .
+docker run -p 3000:3000 random-phrases 
+```
+
+### Access the application:
+
+Open your browser and navigate to:
+
+```
+http://localhost:3000
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
